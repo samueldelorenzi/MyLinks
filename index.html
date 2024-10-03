@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My links</title>
+    <title>My Links</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
+    <link rel="icon" href="assets/link.png" type="image/x-icon">
 </head>
 <body>
-    <h3>Samuel De Lorenzi</h3>
-
-    <p>Software Developer | C# | .NET | Python | Bash Script | Linux Enthusiast</p>
-    
+    <div id="container">
+        <img id="perfil" src="assets/perfil.jpg" alt="Profile Picture">
+        <h3>Samuel De Lorenzi</h3>
+        <p id="descricao">Software Developer | C# | .NET |<br> Python | Bash Script | Linux Enthusiast</p>
+    </div>
+    <div class="caixa" data-url="https://www.linkedin.com/in/samueldelorenzi/">
+        <img class="icone" src="assets/linkedin.png" alt="LinkedIn">
+        <div class="rede">
+            <p>LinkedIn</p>
+        </div>
+    </div>
+    <div class="caixa" data-url="https://github.com/samueldelorenzi">
+        <img class="icone" src="assets/github.png" alt="GitHub">
+        <div class="rede">
+            <p>GitHub</p>
+        </div>
+    </div>
+    <div class="caixa" data-url="https://drive.google.com/file/d/1hOnrrtEuEpj0Zn7KyrwbqFy4HnR8pJBg/view">
+        <img class="icone" src="assets/curriculo.png" alt="Currículo">
+        <div class="rede">
+            <p>Currículo</p>
+        </div>
+    </div>
 </body>
 </html>
