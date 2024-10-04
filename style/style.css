@@ -1,13 +1,15 @@
 body {
-    font-family: "DM Sans", sans-serif;
-    font-size: 18px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1rem;
     color: aliceblue;
     background: linear-gradient(to right, #1e3c72, #000000);
     background-size: cover;
+    margin: 0;
 }
 
 #container {
     text-align: center;
+    white-space: nowrap;
 }
 
 #descricao {
@@ -15,20 +17,21 @@ body {
 }
 
 #perfil {
-    height: 90px;
+    height: 6rem;
     width: auto;
     border-radius: 50%;
-    margin-top: 50px;
+    margin-top: 4rem;
+    user-select: none;
 }
 
 .caixa {
-    width: 20rem;
-    height: 6%;
+    width: 23rem;
+    height: 4rem;
     background-color: aliceblue;
-    border-radius: 20px;
+    border-radius: 1rem;
     color: black;
-    font-weight: 600;
-    margin: 20px auto;
+    font-weight: 700;
+    margin: 1.4rem auto;
     display: flex;
     align-items: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -45,6 +48,8 @@ body {
     height: auto;
     margin: 7px;
     position: absolute;
+    user-select: none;
+    border-radius: 50%;
 }
 
 .rede {
@@ -55,4 +60,45 @@ body {
 .link {
     text-decoration: none;
     color: black
+}
+
+#copydiv {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    white-space: nowrap;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+    visibility: hidden;
+}
+
+#github-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    visibility: hidden;
+}
+
+#github-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#teste {
+    background-color: black;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 80rem) {
+    #copydiv {
+        visibility: visible;
+    }
+    #github-button {
+        visibility: visible;
+    }
 }
