@@ -3,6 +3,7 @@ body {
     font-size: 18px;
     color: aliceblue;
     background: linear-gradient(to right, #1e3c72, #000000);
+    background-size: cover;
 }
 
 #container {
@@ -21,7 +22,7 @@ body {
 }
 
 .caixa {
-    width: 25%;
+    width: 20rem;
     height: 6%;
     background-color: aliceblue;
     border-radius: 20px;
