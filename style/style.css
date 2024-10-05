@@ -2,21 +2,26 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-size: 1rem;
     color: aliceblue;
-    background: linear-gradient(to right, #1e3c72, #000000);
-    background-size: cover;
     margin: 0;
 }
 
-#container {
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#main-info {
     text-align: center;
     white-space: nowrap;
 }
 
-#descricao {
+#resume {
     margin-bottom: 15px;
 }
 
-#perfil {
+#profile-picture {
     height: 6rem;
     width: auto;
     border-radius: 50%;
@@ -24,7 +29,7 @@ body {
     user-select: none;
 }
 
-.caixa {
+.link {
     width: 23rem;
     height: 4rem;
     background-color: aliceblue;
@@ -38,13 +43,18 @@ body {
     position: relative;
 }
 
-.caixa:hover {
-    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.4);
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover {
+    box-shadow: 0px 10px 5px rgba(97, 97, 97, 0.4);
     transform: translateY(-5px);
     cursor: pointer;
 }
 
-.icone {
+.link-icon {
     width: 50px;
     height: auto;
     margin: 7px;
@@ -53,64 +63,48 @@ body {
     border-radius: 50%;
 }
 
-.rede {
+.link-text {
     background-color: aliceblue;
     margin: auto auto;
 }
 
-.link {
-    text-decoration: none;
-    color: black
+#footer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #202020;
+    font-size: 0.8rem;
 }
 
-#copydiv {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    white-space: nowrap;
-    padding-left: 1rem;
-    font-size: 0.8rem;
-    visibility: hidden;
+#footer-left, #footer-right {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#footer-right a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
 #github-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 100;
-    visibility: hidden;
-}
-
-#github-button a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#repo-text {
-    width: 150px;
-    height: 30px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 0.8rem;
-}
-
-#github-icon {
-    width: 20px;
-    height: auto;
-    margin-right: 10px;
-    user-select: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-right: auto;
 }
 
 #github-button:hover {
-    font-weight: 1000;
+    transform: scale(1.05);
 }
 
-@media (min-width: 80rem) {
-    #copydiv {
-        visibility: visible;
-    }
-    #github-button {
-        visibility: visible;
-    }
+#github-icon {
+    width: 1.3rem;
+    height: auto;
+    margin-right: 10px;
+    user-select: none;
 }

@@ -10,41 +10,44 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="script/script.js" defer></script>
     <link rel="icon" href="assets/link.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script> <!-- Include p5.js -->
 </head>
 <body>
-    <div id="container">
-        <img id="perfil" src="assets/perfil.jpg" alt="Profile Picture">
+    <div id="main-info">
+        <img id="profile-picture" src="assets/perfil.jpg" alt="Profile Picture">
         <h3>Samuel De Lorenzi</h3>
-        <p id="descricao">Software Developer | C# | .NET |<br> Python | Bash Script | Linux Enthusiast</p>
+        <p id="resume">Software Developer | C# | .NET |<br> Python | Bash Script | Linux Enthusiast</p>
     </div>
-    <div class="caixa" data-url="https://www.linkedin.com/in/samueldelorenzi/">
-        <img class="icone" src="assets/linkedin.png" alt="LinkedIn">
-        <div class="rede">
+    <a class="link" href="https://www.linkedin.com/in/samueldelorenzi/" target="_blank">
+        <img class="link-icon" src="assets/linkedin.png" alt="LinkedIn">
+        <div class="link-text">
             <p>LinkedIn</p>
         </div>
-    </div>
-    <div class="caixa" data-url="https://github.com/samueldelorenzi">
-        <img class="icone" src="assets/github.png" alt="GitHub">
-        <div class="rede">
+    </a>
+    <a class="link" href="https://www.github.com/samueldelorenzi/" target="_blank">
+        <img class="link-icon" src="assets/github.png" alt="GitHub">
+        <div class="link-text">
             <p>GitHub</p>
         </div>
-    </div>
-    <div class="caixa" data-url="https://drive.google.com/file/d/1hOnrrtEuEpj0Zn7KyrwbqFy4HnR8pJBg/view">
-        <img class="icone" src="assets/curriculo.png" alt="Currículo">
-        <div class="rede">
+    </a>
+    <a class="link" href="https://drive.google.com/file/d/1hOnrrtEuEpj0Zn7KyrwbqFy4HnR8pJBg/view" target="_blank">
+        <img class="link-icon" src="assets/curriculo.png" alt="Currículo">
+        <div class="link-text">
             <p>Currículo</p>
         </div>
-    </div>
-    <div id="copydiv">
-        <p id="copy">© 2024 Samuel De Lorenzi</p>
-    </div>
-    <div id="github-button">
-        <a href="https://github.com/samueldelorenzi/MyLinks" target="_blank">
-            <div id="repo-text">
-                <img id="github-icon" src="assets/githubw.png" alt="GitHub">
-                <p>Repositório</p>
-            </div>
-        </a>
-    </div>    
+    </a>
+    <footer id="footer">
+        <div id="footer-left">
+            <p>© 2024 Samuel De Lorenzi. All rights reserved.</p>
+        </div>
+        <div id="footer-right">
+            <a href="https://github.com/samueldelorenzi/MyLinks" target="_blank">
+                <div id="github-button">
+                    <img src="assets/githubw.png" id="github-icon" alt="GitHub">
+                    <p>Repositório</p>
+                </div>
+            </a>
+        </div>  
+    </footer>
 </body>
 </html>
